@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-class Patterns{
+class PyramidPattern{
 	public static void main(String []a){
 	Scanner se=new Scanner(System.in);
 	byte row=se.nextByte();
-	Patterns ps=new Patterns();
+	PyramidPattern ps=new PyramidPattern();
 	ps.FirstPattern(row);
 	System.out.println("----------------------------------------------");
 	ps.SecondPattern(row);
@@ -25,36 +25,54 @@ class Patterns{
 	System.out.println("----------------------------------------------");
 	ps.TenPattern(row);
 	System.out.println("----------------------------------------------");
-	
-	
 	}
 	void FirstPattern(byte row){
 		
-	for(int r = 1;r <= row;  r++){
-	 for(int c = 1;c<= row;  c++) {
-		
-         if(c<=r && r+c<=6)
+		int r=1;
+		 while(r<=row  ){
+		 int c=1;
+	       
+		   
+		   
+		 while(c<=row  ){
+			
+         if(c<=r && r+c<=6){
 	
 			System.out.print("*\t");
-	     else
-	         System.out.print(" \t ");
-	 }
 			
+		 }
+	     else{
+	         System.out.print(" \t ");
+		     
+			
+			
+		      
+		 }	
+		 c++;
+		 
+		 }	
+         r++;		 
 			System.out.println();
-		}
-	
+		
+		 }
 	}
 	void SecondPattern(byte row){
 		
-	for(int r = 1;r <= row;  r++){
-	 for(int c = 1;c<= row;  c++) {
+	   int r=1;
+	   while(r<=row){
+		   int c=1;
+	   while(c<=row) {
 		
-         if(r<=c && r+c<=6)
+		 if(r<=c && r+c<=6) {
 	
 			System.out.print("*\t");
-	     else
+		 }
+	     else{
 	         System.out.print("\t");
 	 }
+	 c++;
+	   }
+	   r++;
 			
 			System.out.println();
 		}
@@ -62,16 +80,23 @@ class Patterns{
 	}
 	
 void ThirdPattern(byte row){
+	
+	
+	   int r=1;
+	   while(r<=row){
+		   int c=1;
+	   while(c<=row) {
 		
-	for(int r = 1;r <= row;  r++){
-	 for(int c = 1;c<= row;  c++) {
-		
-         if(c<=r||c==1||r+c>=(row+1))
+         if(c<=r||c==1||r+c>=(row+1)){
 	
 			System.out.print("*\t");
-	     else
+		 }
+	     else{
 	         System.out.print("\t");
 	 }
+	 c++;
+	   }
+	   r++;
 			
 			System.out.println();
 		}
@@ -79,15 +104,22 @@ void ThirdPattern(byte row){
 	}
 	void FourthPattern(byte row){
 		
-	for(int r = 1;r <= row;  r++){
-	 for(int c = 1;c<= row;  c++) {
+	
+	   int r=1;
+	   while(r<=row){
+		   int c=1;
+	   while(c<=row) {
 		
-         if(r==1||c<=r && r+c<=(row+3)||r==5||r+c<=(row+1))
+         if(r==1||c<=r && r+c<=(row+3)||r==5||r+c<=(row+1)){
 	
 			System.out.print("*\t");
-	     else
+		 }
+	     else{
 	         System.out.print("\t");
 	 }
+	 c++;
+	   }
+	   r++;
 			
 			System.out.println();
 		}
@@ -96,14 +128,22 @@ void ThirdPattern(byte row){
 	
 	void FifthPattern(byte row){
 		
-	for(int r = 1;r <= row;  r++){
-	 for(int c = 1;c<= row;  c++) {
-		if(c>=r && r+c>=6)
+	
+	   int r=1;
+	   while(r<=row){
+		   int c=1;
+	   while(c<=row) {
+		   
+		if(c>=r && r+c>=6){
         
 			System.out.print("*\t");
-	     else
+		}
+	     else{
 	         System.out.print("\t");
 	 }
+	 c++;
+	   }
+	   r++;
 			
 			System.out.println();
 		}
@@ -111,14 +151,20 @@ void ThirdPattern(byte row){
 	}	
 	void SixthPattern(byte row){
 		
-	for(int r = 1;r <= row;  r++){
-	 for(int c = 1;c<= row;  c++) {
-		 if(r>=c && r+c>=6)
+	   int r=1;
+	   while(r<=row){
+		   int c=1;
+	   while(c<=row) {
+		 if(r>=c && r+c>=6){
         
 			System.out.print("*\t");
-	     else
+		 }
+	     else{
 	         System.out.print("\t");
 	 }
+	 c++;
+	   }
+	   r++;
 			
 			System.out.println();
 		}
@@ -126,15 +172,22 @@ void ThirdPattern(byte row){
 	}	
 	void SeventhPattern(byte row){
 		
-	for(int r = 1;r <= row;  r++){
-	 for(int c = 1;c<= row;  c++) {
-		  if(c>=r||c==5||r+c<=(row+1))
 	
-        
-			System.out.print("*\t");
-	     else
+	   int r=1;
+	   while(r<=row){
+		   int c=1;
+	   while(c<=row) {
+		   
+		  if(c>=r||c==5||r+c<=(row+1)){
+	
+             System.out.print("*\t");
+		  }
+	     else{
 	         System.out.print("\t");
 	 }
+	 c++;
+	   }
+	   r++;
 			
 			System.out.println();
 		}
@@ -142,42 +195,61 @@ void ThirdPattern(byte row){
 	}	
 	void EightPattern(byte row){
 		
-	for(int r = 1;r <= row;  r++){
-	 for(int c = 1;c<= row;  c++) {
-		 if(r==5||c>=r && r+c>=(row-3)||r==1||r+c>=(row+1))
+	
+	   int r=1;
+	   while(r<=row){
+		   int c=1;
+	   while(c<=row) {
+		   
+		 if(r==5||c>=r && r+c>=(row-3)||r==1||r+c>=(row+1)){
         
 			System.out.print("*\t");
-	     else
+	   }
+	     else{
 	         System.out.print("\t");
 	 }
+	 c++;
+	   }
+	   r++;
 			
 			System.out.println();
 		}
 	
 	}	
 	
-	void NinePattern(int row){
+	void NinePattern(byte row){
 		int anything=1;
-		for(int r=1;r<=row;r++){
-			for(int c=1;c<=row;c++) {
+		
+	   int r=1;
+	   while(r<=row){
+		   int c=1;
+	   while(c<=row) {
 				if(c<=r||r+c >= row+1) {
 				
 				   System.out.print(anything+ "\t");
 				   anything++;
-				}else
+				}else{
 				   System.out.print("\t");
+				}
+				c++;
+	            }
+	            r++;
 			        
 				
-			}
+			
 			System.out.println();
 			
 		}
 	}
 			
-			void TenPattern(int row){
+			void TenPattern(byte row){
 		int anything=1;
-		for(int r=1;r<=row;r++){
-			for(int c=1;c<=row;c++) {
+		
+	   int r=1;
+	   while(r<=row){
+		   int c=1;
+	   while(c<=row) {
+		   
 				if(c<=r||r+c<=row+1){
 				   System.out.print(anything+"\t");
 				   anything++;
@@ -186,16 +258,13 @@ void ThirdPattern(byte row){
 					System.out.print("\t");
 					anything++;
 			}
+			c++;
 			}
+			r++;
 			System.out.println();
 			
 		}
 	}
-			
-			
-			
-			
-			
 			
 			
 			
