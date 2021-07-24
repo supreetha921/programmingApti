@@ -28,9 +28,9 @@ class PyramidPattern{
 	}
 	void FirstPattern(byte row){
 		
-		int r=1;
+		int r=1,c=1;
 		 while(r<=row  ){
-		 int c=1;
+		 
 	       
 		   
 		   
@@ -51,16 +51,17 @@ class PyramidPattern{
 		 c++;
 		 
 		 }	
-         r++;		 
+         r++;
+         c=1;		 
 			System.out.println();
 		
 		 }
 	}
 	void SecondPattern(byte row){
 		
-	   int r=1;
+	   int r=1,c=1;
 	   while(r<=row){
-		   int c=1;
+		   
 	   while(c<=row) {
 		
 		 if(r<=c && r+c<=6) {
@@ -73,7 +74,7 @@ class PyramidPattern{
 	 c++;
 	   }
 	   r++;
-			
+		c=1;	
 			System.out.println();
 		}
 	
@@ -82,9 +83,9 @@ class PyramidPattern{
 void ThirdPattern(byte row){
 	
 	
-	   int r=1;
+	   int r=1,c=1;
 	   while(r<=row){
-		   int c=1;
+		   
 	   while(c<=row) {
 		
          if(c<=r||c==1||r+c>=(row+1)){
@@ -97,7 +98,7 @@ void ThirdPattern(byte row){
 	 c++;
 	   }
 	   r++;
-			
+		c=1;	
 			System.out.println();
 		}
 	
@@ -105,9 +106,9 @@ void ThirdPattern(byte row){
 	void FourthPattern(byte row){
 		
 	
-	   int r=1;
+	   int r=1,c=1;
 	   while(r<=row){
-		   int c=1;
+		  
 	   while(c<=row) {
 		
          if(r==1||c<=r && r+c<=(row+3)||r==5||r+c<=(row+1)){
@@ -120,7 +121,7 @@ void ThirdPattern(byte row){
 	 c++;
 	   }
 	   r++;
-			
+		c=1;	
 			System.out.println();
 		}
 	
@@ -129,9 +130,9 @@ void ThirdPattern(byte row){
 	void FifthPattern(byte row){
 		
 	
-	   int r=1;
+	   int r=1,c=1;
 	   while(r<=row){
-		   int c=1;
+		   
 	   while(c<=row) {
 		   
 		if(c>=r && r+c>=6){
@@ -144,16 +145,16 @@ void ThirdPattern(byte row){
 	 c++;
 	   }
 	   r++;
-			
+		c=1;	
 			System.out.println();
 		}
 	
 	}	
 	void SixthPattern(byte row){
 		
-	   int r=1;
+	   int r=1,c=1;
 	   while(r<=row){
-		   int c=1;
+		   
 	   while(c<=row) {
 		 if(r>=c && r+c>=6){
         
@@ -165,7 +166,7 @@ void ThirdPattern(byte row){
 	 c++;
 	   }
 	   r++;
-			
+		c=1;	
 			System.out.println();
 		}
 	
@@ -173,9 +174,9 @@ void ThirdPattern(byte row){
 	void SeventhPattern(byte row){
 		
 	
-	   int r=1;
+	   int r=1,c=1;
 	   while(r<=row){
-		   int c=1;
+		   
 	   while(c<=row) {
 		   
 		  if(c>=r||c==5||r+c<=(row+1)){
@@ -188,7 +189,7 @@ void ThirdPattern(byte row){
 	 c++;
 	   }
 	   r++;
-			
+		c=1;	
 			System.out.println();
 		}
 	
@@ -196,9 +197,9 @@ void ThirdPattern(byte row){
 	void EightPattern(byte row){
 		
 	
-	   int r=1;
+	   int r=1,c=1;
 	   while(r<=row){
-		   int c=1;
+		  
 	   while(c<=row) {
 		   
 		 if(r==5||c>=r && r+c>=(row-3)||r==1||r+c>=(row+1)){
@@ -211,7 +212,7 @@ void ThirdPattern(byte row){
 	 c++;
 	   }
 	   r++;
-			
+		c=1;	
 			System.out.println();
 		}
 	
@@ -220,9 +221,9 @@ void ThirdPattern(byte row){
 	void NinePattern(byte row){
 		int anything=1;
 		
-	   int r=1;
+	   int r=1,c=1;
 	   while(r<=row){
-		   int c=1;
+		   
 	   while(c<=row) {
 				if(c<=r||r+c >= row+1) {
 				
@@ -234,7 +235,7 @@ void ThirdPattern(byte row){
 				c++;
 	            }
 	            r++;
-			        
+			     c=1;   
 				
 			
 			System.out.println();
@@ -245,9 +246,9 @@ void ThirdPattern(byte row){
 			void TenPattern(byte row){
 		int anything=1;
 		
-	   int r=1;
+	   int r=1,c=1;
 	   while(r<=row){
-		   int c=1;
+		   
 	   while(c<=row) {
 		   
 				if(c<=r||r+c<=row+1){
@@ -261,6 +262,7 @@ void ThirdPattern(byte row){
 			c++;
 			}
 			r++;
+			c=1;
 			System.out.println();
 			
 		}
