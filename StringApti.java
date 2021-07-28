@@ -19,6 +19,8 @@ class StringApti{
 	System.out.println("----------------------------------------------");
 	Apti.String9();
 	System.out.println("----------------------------------------------");
+	Apti.String10();
+	System.out.println("----------------------------------------------");
 	
 	
 	
@@ -32,10 +34,10 @@ class StringApti{
 		
 		String s= "hello developers,good afternoon,welcome to x-works,today is holiday";
 		char []ch=s.toCharArray();
-		int c ='d';
+		int c ='e';
 		int count=0;
 		for(int i=0;i<ch.length;i++){
-			if(ch[i]== 'd') {
+			if(ch[i]== 'e') {
 				count++;
 			}
 		}
@@ -173,6 +175,21 @@ class StringApti{
 		
 	}
 
+      void String10(){
+		
+      String s= "hello developers, good afternoon, welcome to x-works, today is holiday";
+	  char []ch=s.toCharArray();
+	  int intIndex=s.indexOf("good");
+	  if(intIndex== -1) {
+		  System.out.println("good not found");
+	  }else{
+		  System.out.println("Found good at index"+intIndex);
+	  }
+	  }
+		
+		
+		
+    
 
 		
 		
